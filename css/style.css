@@ -1,0 +1,137 @@
+/* 
+    @Filename : index.html
+    @Author : 구본아
+    @Description : 네이버회원가입페이지 UI구현_css코드
+*/
+
+/** 전체 레이아웃 *******************************************/
+body{
+    width: 100%;
+    height: 100vh;
+    background: #F5F6F7;
+}
+#wrap{
+    width: 300px;
+    margin: auto;
+}
+#wrap #logo{
+    width: inherit;
+    margin: auto;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+#wrap #logo-img{
+    width: 150px;
+}
+.input-wrap{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+/** 공통 style ****************************************************/
+.input-wrap label{
+    font-size: 10px;
+    font-weight: 540;
+    line-height: 25px;
+}
+.input-wrap input::placeholder{
+    color: #8E8E8E;
+    font-size: 10px;
+    text-indent: 3px;
+}
+.input-wrap input,
+.input-wrap select{
+    font-size: 10px;
+    height: 25px;
+    border: 0.5px solid #DADADA;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.input-wrap input:hover{
+    border: 0.5px solid #DADADA;
+}
+.input-wrap input:focus,
+.input-wrap select:focus{
+    border: 0.5px solid #02C75A;
+    outline: none;
+}
+
+/** 1번 아이디 영역**********************************************/
+.input-wrap #user_id::placeholder{
+    text-align: right;
+    margin-right: 10px;
+}
+
+/** 2번 비밀번호 영역**********************************************/
+.input-wrap .icon{
+    position:absolute;
+    right: 10px;
+    top:27px;
+    color: #8E8E8E;
+}
+.input-wrap:nth-child(3),
+.input-wrap:nth-child(2){
+    position: relative;
+}
+
+/** 3번 비밀번호 영역**********************************************/
+/* 2번영역과 동일 */
+
+/** 5번 생년월일 영역**********************************************/
+#select-birth{
+    display: flex;
+    justify-content: space-between;
+}
+#birth_year{
+    width: 30%;
+}
+#birth_month{
+ width: 30%;
+ height: 28px;
+ margin: 0 5px 0 5px;
+}
+#birth_day{
+ width: 30%;
+}
+
+/** 7번 본인확인이메일 영역**********************************************/
+.input-wrap label #user_check_span{
+    font-size: 1px;
+    color:#8E8E8E;
+}
+
+
+/** 9번 휴대전화 영역 *******************************************/
+.btn{
+    background: #02C75A;
+    color: white;
+    font-size: 10px;
+    line-height: 28px;
+    height: 28px;
+    text-align: center;
+    cursor: pointer;
+}
+#phone-number-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+}
+#phone-number{
+    width: 65%;
+}
+#phone-number-btn{
+    width: 30%;
+    border: none;
+}
+
+
+#verification_code{ background:#F5F6F7;}
+
+
+#signup-btn{
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+}
+
